@@ -1,4 +1,3 @@
-
 Project	Type	Theme
 1. Static Site	Simple	Personal intro + resume (HTML/CSS/JS)
 2. AWS Deployment	Intermediate	S3 + CloudFront or Amplify site
