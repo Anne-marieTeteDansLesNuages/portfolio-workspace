@@ -1,0 +1,10 @@
+   [User]
+      |
+      v
+ [IAM Policy] ----> allows s3:GetObject
+      |
+      v
+ [Bucket Policy] ----X----> denies ListBucket or mismatched ARN
+      |
+      v
+ [S3 Bucket]

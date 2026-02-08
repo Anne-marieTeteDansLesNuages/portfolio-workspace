@@ -1,0 +1,26 @@
+// ✅ Why this works:
+// - Correct bucket ARN for ListBucket (no wildcard)
+// - Correct object ARN for GetObject (includes /*)
+// - Separates bucket-level and object-level permissions, which is AWS best practice
+// - Explicitly grants both listing and reading access
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket"
+      ],
+      "Resource": "arn:aws:s3:::my-demo-bucket"
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Resource": "arn:aws:s3:::my-demo-bucket/*"
+    }
+  ]
+}
+
