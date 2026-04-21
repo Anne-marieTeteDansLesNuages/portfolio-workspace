@@ -1,5 +1,0 @@
-Project	Type	Theme
-1. Static Site	Simple	Personal intro + resume (HTML/CSS/JS)
-2. AWS Deployment	Intermediate	S3 + CloudFront or Amplify site
-3. API Integration	Intermediate	Lambda + API Gateway + DynamoDB
-4. AI-Driven App	Advanced	ML model or AI API (e.g., sentiment analysis, image tagging)

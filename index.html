@@ -3,69 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>annempl</title>
+    <title>Anne-marie Portfolio</title>
 
-    <!-- Link to your stylesheet -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+
+    <!-- Navigation -->
     <header>
-        <nav>
-            <div class="logo">MyLogo</div>
+        <nav class="main-nav">
+            <div class="nav-left">Anne-marie P.</div>
 
             <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="contact.html">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
+        <div class="nav-separator"></div>
     </header>
-    <div class="container">
-        <section class="section">
-            <h1>Hi, I am Anne-marie. Welcome to my Portfolio</h1>
-            <p>This page will show a collection of projects I have worked on.</p>
-            <!-- <button class="btn">A Styled Button</button> -->
-        </section>
 
-        <section class="section">
-            <h2>Projects</h2>
+    <!-- AWS Word Cloud Banner -->
+    <section class="aws-banner">
+        <div class="banner-img-wrap">
+            <img src="assets/pics/wordcloud_banner.jpg" alt="Cloud computing word cloud" class="banner-img">
+        </div>
+    </section>
 
-            <div class="projects-container">
+    <!-- Portfolio Title -->
+    <section id="home" class="portfolio-title">
+        <h1>Hello, I am Anne-marie</h1>
+        <p class="subtitle">Welcome to my portfolio</p>
+    </section>
 
-                <div class="project-card">
-                    <img src="assets/images/project1.png" alt="Project 1">
-                    <h3>Project Title</h3>
-                    <p>This is a sample card for project1.</p>
-                </div>
+    <!-- Bio + Portrait -->
+    <section id="about" class="bio-section fade-in">
+        <div class="bio-card">
+            <p class="dropcap">
+                I’m a cloud engineer in training who’s always been drawn to how systems work, how they break, and how they can be rebuilt into something better. That curiosity led me to cloud and DevOps, where structure, logic, and creativity come together in a way that makes sense to me.
+            </p>
 
-                <div class="project-card">
-                    <img src="assets/images/project2.png" alt="Project 2">
-                    <h3>Project Title</h3>
-                    <p>This is a sample card for project2.</p>
-                </div>
+            <p>
+                Through the AWS Cloud Institute, I’ve built a strong foundation in AWS architecture and automation, earning my Cloud Practitioner and AI Practitioner certifications and now working on the Developer Associate. My projects reflect the way I think: modular, maintainable, and grounded in real-world use cases.
+            </p>
 
-                <div class="project-card">
-                    <img src="assets/images/project3.png" alt="Project 3">
-                    <h3>Project Title</h3>
-                    <p>This is a sample card for project3.</p>
-                </div>
+            <p>
+                What motivates me is the idea that good infrastructure quietly empowers everything else. Clean deployments, secure architectures, and reliable pipelines are the invisible foundations that let teams move faster and build with confidence. That’s the kind of work I want to contribute to as I grow into cloud engineering, DevOps, or SRE roles.
+            </p>
+        </div>
 
-                <div class="project-card">
-                    <img src="assets/images/project4.png" alt="Project 4">
-                    <h3>Project Title</h3>
-                    <p>This is a sample card for project4.</p>
-                </div>
+        <div class="bio-photo">
+            <img src="assets/pics/visage_portfolio.jpg" alt="Portrait of Anne-marie">
+        </div>
+    </section>
 
-                <div class="project-card">
-                    <img src="assets/images/project5.png" alt="Project 5">
-                    <h3>Project Title</h3>
-                    <p>This is a sample card for project5.</p>
-                </div>
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <h2>Skills</h2>
 
+        <div class="skills-grid">
+
+            <div class="skill-block">
+                <h3>Cloud Foundations &amp; Networking</h3>
+                <ul>
+                    <li>AWS Global Infrastructure</li>
+                    <li>VPC design (subnets, routing, endpoints)</li>
+                    <li>Security Groups &amp; NACLs</li>
+                    <li>High availability &amp; cost optimization</li>
+                </ul>
             </div>
-        </section>
+
+            <div class="skill-block">
+                <h3>Compute &amp; Serverless</h3>
+                <ul>
+                    <li>EC2, Auto Scaling, Load Balancing</li>
+                    <li>AWS Lambda</li>
+                    <li>Event-driven &amp; serverless architecture</li>
+                    <li>ECS, Fargate, Docker</li>
+                </ul>
+            </div>
+
+            <div class="skill-block">
+                <h3>Storage &amp; Databases</h3>
+                <ul>
+                    <li>S3 (versioning, lifecycle, encryption)</li>
+                    <li>DynamoDB</li>
+                    <li>RDS (MySQL), snapshots &amp; backups</li>
+                    <li>EBS</li>
+                </ul>
+            </div>
+
+            <div class="skill-block">
+                <h3>Application Integration</h3>
+                <ul>
+                    <li>API Gateway (REST)</li>
+                    <li>EventBridge</li>
+                    <li>SQS &amp; SNS</li>
+                    <li>Step Functions (intro)</li>
+                </ul>
+            </div>
+
+            <div class="skill-block">
+                <h3>Infrastructure as Code &amp; CI/CD</h3>
+                <ul>
+                    <li>CloudFormation</li>
+                    <li>AWS SAM</li>
+                    <li>CodeBuild, CodeDeploy, CodePipeline</li>
+                    <li>Automated deployments</li>
+                </ul>
+            </div>
+
+            <div class="skill-block">
+                <h3>Monitoring, Security &amp; Operations</h3>
+                <ul>
+                    <li>CloudWatch Logs, Metrics, Alarms</li>
+                    <li>CloudTrail dashboard</li>
+                    <li>IAM roles, users, groups &amp; policies</li>
+                    <li>Secrets Manager, Parameter Store</li>
+                </ul>
+            </div>
+
+            <div class="skill-block">
+                <h3>Frontend &amp; Delivery</h3>
+                <ul>
+                    <li>CloudFront</li>
+                    <li>Route 53</li>
+                    <li>AWS Amplify &amp; AWS AppRunner</li>
+                </ul>
+            </div>
+
+            <div class="skill-block">
+                <h3>AI / ML</h3>
+                <ul>
+                    <li>Amazon Kendra</li>
+                    <li>Amazon Bedrock (intro)</li>
+                    <li>Comprehend &amp; Rekognition (intro)</li>
+                </ul>
+            </div>
+
+            <div class="skill-block">
+                <h3>Programming &amp; Tooling</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Linux CLI &amp; Bash</li>
+                    <li>GitHub, AWS CLI, boto3</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card salon-card">
+                <div class="card-overlay">
+                    <h3>Salon</h3>
+                </div>
+            </div>
+
+            <div class="project-card shelter-card">
+                <div class="card-overlay">
+                    <h3>Pet Shelter</h3>
+                </div>
+            </div>
+
+            <div class="project-card placeholder-card">
+                <div class="card-overlay">
+                    <h3>Project 3</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer id="contact" class="footer">
+    <h2 class="footer-title">Let's Connect</h2>
+
+    <div class="footer-icons">
+        <!-- <a href="mailto:marouche1@gmail.com"><i class="fa-solid fa-envelope"></i></a>  -->
+        <a href="https://github.com/Anne-marieTeteDansLesNuages" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/annemarieplanken" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
     </div>
+
+    <form action="https://formspree.io/f/xldqjdez" method="POST" class="contact-form">
+        <label>
+            Your Name
+            <input type="text" name="name" required>
+        </label>
+
+        <label>
+            Your Email
+            <input type="email" name="email" required>
+        </label>
+
+        <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+        </label>
+
+        <input type="hidden" name="_redirect" value="https://main.d2rqqbwuygfulb.amplifyapp.com/pages/thank-you.html">
+        <button type="submit" class="contact-btn">Send Message</button>
+        <p id="contact-status" class="contact-status"></p>
+
+    </form>
+</footer>
+
 </body>
 </html>
+
+
