@@ -382,3 +382,82 @@ h3 { font-size: 1.45rem; }
   transform: translateY(-2px);
 }
 
+/* ------------------------------
+   Responsive — Tablet (max 768px)
+------------------------------ */
+@media (max-width: 768px) {
+
+  body {
+    padding: 1rem;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+
+  .bio-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bio-card {
+    max-width: 100%;
+  }
+
+  .bio-photo img {
+    width: 100%;
+    max-width: 340px;
+    height: 420px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* ------------------------------
+   Responsive — Mobile (max 480px)
+------------------------------ */
+@media (max-width: 480px) {
+
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+
+  .nav-left {
+    font-size: 1.2rem;
+  }
+
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .nav-links a {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-photo img {
+    width: 100%;
+    max-width: 280px;
+    height: 360px;
+  }
+
+  .footer {
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+}
