@@ -276,6 +276,25 @@ h3 { font-size: 1.45rem; }
   font-size: 1.8rem;
 }
 
+.card-overlay p {
+  display: none;
+}
+
+.project-card:hover .card-overlay {
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-card:hover .card-overlay p {
+  display: block;
+  color: #F7D3A0;
+  font-size: 0.85rem;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding: 0 1rem;
+}
+
 /* Card Images */
 .salon-card {
   background-image: url("../pics/braided_hair.jpg");
