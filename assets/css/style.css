@@ -287,8 +287,8 @@ h3 { font-size: 1.45rem; }
 
 .project-card:hover .card-overlay p {
   display: block;
-  color: #F7D3A0;
-  font-size: 0.85rem;
+  color: #FAF4F0;
+  font-size: 0.75rem;
   font-family: "Oxygen", sans-serif;
   font-weight: 300;
   text-align: center;
